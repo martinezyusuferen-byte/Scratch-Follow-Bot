@@ -12,7 +12,7 @@ while{} True:
 
   latestcomment = str(project.comments(all=False, limit=1, offset=0, comment_id=None))
 
-  partitioned_string = latestcomment.partition("'username': '")
+  partitioned_string = latestcomment.partition("'baldernegi_2024': '")
   partone = partitioned_string[2]
   parttwo = partone.partition("',")
   commenter = parttwo[0]
